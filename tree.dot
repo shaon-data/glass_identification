@@ -1,0 +1,24 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="id_number <= 70.0\ngini = 0.74\nsamples = 149\nvalue = [50, 51, 13, 8, 7, 20]\nclass = building_windows_non_float_processed"] ;
+1 [label="gini = 0.0\nsamples = 50\nvalue = [50, 0, 0, 0, 0, 0]\nclass = building_windows_float_processed"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="id_number <= 146.5\ngini = 0.665\nsamples = 99\nvalue = [0, 51, 13, 8, 7, 20]\nclass = building_windows_non_float_processed"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="gini = 0.0\nsamples = 51\nvalue = [0, 51, 0, 0, 0, 0]\nclass = building_windows_non_float_processed"] ;
+2 -> 3 ;
+4 [label="id_number <= 185.5\ngini = 0.704\nsamples = 48\nvalue = [0, 0, 13, 8, 7, 20]\nclass = headlamps"] ;
+2 -> 4 ;
+5 [label="Mg <= 3.01\ngini = 0.64\nsamples = 28\nvalue = [0, 0, 13, 8, 7, 0]\nclass = vehicle_windows_float_processed"] ;
+4 -> 5 ;
+6 [label="id_number <= 176.0\ngini = 0.498\nsamples = 15\nvalue = [0, 0, 0, 8, 7, 0]\nclass = containers"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 8\nvalue = [0, 0, 0, 8, 0, 0]\nclass = containers"] ;
+6 -> 7 ;
+8 [label="gini = 0.0\nsamples = 7\nvalue = [0, 0, 0, 0, 7, 0]\nclass = tableware"] ;
+6 -> 8 ;
+9 [label="gini = 0.0\nsamples = 13\nvalue = [0, 0, 13, 0, 0, 0]\nclass = vehicle_windows_float_processed"] ;
+5 -> 9 ;
+10 [label="gini = 0.0\nsamples = 20\nvalue = [0, 0, 0, 0, 0, 20]\nclass = headlamps"] ;
+4 -> 10 ;
+}
